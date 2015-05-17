@@ -47,6 +47,13 @@
             </property>
            </widget>
           </item>
+          <item row="1" column="3">
+           <widget class="QPushButton" name="c_ppbExit">
+            <property name="text">
+             <string>Exit</string>
+            </property>
+           </widget>
+          </item>
          </layout>
         </item>
        </layout>

@@ -66,6 +66,7 @@ escdude::escdude(QWidget *parent) :
     connect(this->c_pConfig, SIGNAL(signal_dumpString(QString)), this, SLOT(slot_dumpString(QString)));
     connect(ui->c_ppbReadConf, SIGNAL(clicked()), this, SLOT(slot_readConfig()));
     connect(ui->c_ppbWriteConf, SIGNAL(clicked()), this, SLOT(slot_writeConfig()));
+    connect(ui->c_ppbExit, SIGNAL(clicked()), this, SLOT(slot_exit()));
 }
 
 escdude::~escdude()
@@ -123,6 +124,11 @@ void escdude::slot_writeConfig()
     return;
   }
   c_pConfig->writeConfig(&c_configList);
+}
+
+void escdude::slot_exit()
+{
+  exit(0);
 }
 
 void escdude::slot_dumpString(QString qsMessage)

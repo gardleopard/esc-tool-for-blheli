@@ -66,6 +66,7 @@ private slots:
   void slot_verifyFlash();
   void slot_readConfig();
   void slot_writeConfig();
+  void slot_exit();
   void slot_dumpString(QString qsMessage);
 };
 
